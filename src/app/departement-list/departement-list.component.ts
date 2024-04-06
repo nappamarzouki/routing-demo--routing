@@ -18,7 +18,7 @@ export class DepartementListComponent {
 constructor(private_router:Router){ }
 
 onSelectDep(departement : any){
-  this._router.navigate(['/departement',departement.id])
+  this._router.navigate(['/departementlist',departement.id])
 }
 
 }

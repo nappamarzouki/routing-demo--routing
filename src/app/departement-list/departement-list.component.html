@@ -1,1 +1,12 @@
-<p>departement-list works!</p>
+<p>departementlist works!</p>
+<div>
+    liste des départements
+</div>
+<div>
+    <ul class="items">
+        
+        <li (click)="onSelectDep(departement)" *ngFor="let departement of departements">
+        <span class="badge">{{departement.id}}</span>{{departement.nom}}
+        </li>
+    </ul>
+</div>
